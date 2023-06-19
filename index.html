@@ -1,42 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assests/css/all.min.css">
-    <link rel="stylesheet" href="assests/css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assests/css/main.css" />
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assests/css/all.min.css" />
+  </head>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-5" href="#"><img src="assests/images/cons-logo.webp" alt="cons"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-2 ms-auto">
-              <li class="nav-item ms-2">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item ms-2">
-                <a class="nav-link" href="#">Business</a>
-              </li>
-              <li class="nav-item ms-2">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item ms-2">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+  <body>
+    <nav class="navbar navbar-expand-lg position-fixed w-100 z-1">
+      <div
+        class="container-lg container-fluid justify-content-between align-items-center"
+      >
+        <a class="navbar-brand" href="#"
+          ><img
+            class="img-fluid"
+            src="assests/images/cons-logo.webp"
+            alt="cons"
+        /></a>
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon my-1"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav h-100 ms-auto">
+            <li class="nav-item h-100">
+              <a class="nav-link px-3 text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item h-100">
+              <a class="nav-link px-3 text-white" href="#">Business</a>
+            </li>
+            <li class="nav-item h-100">
+              <a class="nav-link px-3 text-white active" href="index.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item h-100">
+              <a class="nav-link px-3 text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="flag-content d-flex flex-column align-items-center">
+            <span class="text-white fw-bold">Language | اللغة </span>
+            <div class="flags">
+              <a href="#"
+                ><img
+                  class="flag-img"
+                  src="assests/images/egypt.webp"
+                  alt="egypt"
+              /></a>
+              <a href="#"
+                ><img
+                  class="flag-img"
+                  src="assests/images/united-kingdom.webp"
+                  alt="united-kingdom"
+              /></a>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <article class="first-article text-center pt-5">
+      <div class="container">
+        <!-- about text content start -->
+        <div class="first-article-text pt-5 mb-5">
+          <h1 class="fs-1 fw-bold text-uppercase mb-5">ABOUT US</h1>
+          <div class="buttons d-flex justify-content-center align-items-center">
+            <button class="btn py-2 px-4">WHO WE ARE</button>
+            <button class="btn py-2 px-4 mx-3">ABOUT COMPANY</button>
+            <button class="btn py-2 px-4">HOW TO CONTACT US</button>
+          </div>
+          <!-- about text content end -->
+        </div>
+        <!-- about image & text content start -->
+        <div class="row pt-5">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 mt-5 about-img overflow-hidden"
+          >
+            <img
+              class="img-fluid w-75 h-75 object-fit-cover"
+              src="assests/images/about-img.webp"
+              alt="about-img"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h3 class="fs-2 fw-bold text-uppercase mb-3">WHO WE ARE?</h3>
+            <p class="fs-5 m-0">
+              Market disruption is an accepted reality for business, as new
+              competition and technologies drive the pace of change faster than
+              ever before. Our clients want employees who are prepared to lead,
+              differentiate and adapt in a constantly changing world. They want
+              advisers who are curious about the world, and embrace
+              collaboration and candour.
+            </p>
+            <p class="fs-5 m-0">
+              We bring the right talent to every client issue, regardless of
+              where the client is. We partner with our clients to deliver
+              solutions in the world's largest economies as well as newly
+              opening markets.
+            </p>
+            <p class="fs-5 m-0">
+              We are global citizens, industry savvy, diverse and have a thirst
+              for innovation. Our strength is our ability to adopt a new type of
+              thinking and use cutting-edge legal technologies to help clients
+              overcome the challenges of competing in today's new world economic
+              order.
+            </p>
+            <p class="fs-5 m-0 p-0 pb-5">We are JFC.</p>
+          </div>
+        </div>
+      </div>
+    </article>
 
-<script src="assests/js/bootstrap.bundle.min.js"></script>
-<script src="assests/js/all.min.js"></script>
-<script src="assests/js/js.js"></script>
-</body>
+    <article class="second-article text-center py-5">
+      <div class="container">
+        <!-- about text content start -->
+        <div class="second-article-text pt-5 mb-5">
+          <h1 class="display-4 fw-bold text-uppercase mb-5">
+            VISION & MISSION
+          </h1>
+          <!-- about text content end -->
+        </div>
+        <!-- about image & text content start -->
+        <div class="row mx-auto">
+          <div class="col-lg-5 col-sm-12 mt-5 icon-div mx-auto p-5">
+            <img
+              class="img-fluid mb-4"
+              src="assests/images/vision.webp"
+              alt="about-img"
+            />
+            <h3 class="fs-2 fw-bold text-uppercase mb-4">OUR VISION</h3>
+            <p>
+              - To be the preferred platform for candidates to discover and
+              pursue exciting careers with their ideal organizations.
+            </p>
+            <p>
+              - To be the preferred platform for candidates to discover and
+              pursue exciting careers with their ideal organizations.
+            </p>
+          </div>
+          <div class="col-lg-5 col-sm-12 mt-5 icon-div mx-auto p-5">
+            <img
+              class="img-fluid mb-4"
+              src="assests/images/mission.webp"
+              alt="about-img"
+            />
+            <h3 class="fs-2 fw-bold text-uppercase mb-4">OUR MISSION</h3>
+            <p>
+              Market disruption is an accepted reality for business, as new
+              competition and technologies drive the pace of change faster than
+              ever before. Our clients want employees who are prepared to lead,
+              differentiate and adapt in a constantly changing world. They want
+              advisers who are curious about the world, and embrace
+              collaboration and candour.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- <footer>
+      <div class="container pt-5 pb-3">
+        <div class="row text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <img class="w-25 mb-4" src="assests/images/cons-logo.webp" alt="" />
+            <p class="w-75 m-auto">
+              We are global citizens, industry savvy, diverse and have a thirst
+              for innovation. Our strength is our ability to adopt a new type of
+              thinking and use cutting-edge legal technologies to help clients
+              overcome the challenges of competing in today's new world economic
+              order.
+            </p>
+            <p>We are JFC.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <h4 class="fw-bold mb-5 pt-3">CONTACT INFO</h4>
+            <p><i class="fs-4 fa-solid fa-phone-volume"></i> +20 1010892601</p>
+            <p class="w-75 m-auto">
+              <i class="fs-4 fa-solid fa-house me-1"></i> New Miami - Alexandria
+              - Elquds Schools Street.
+            </p>
+            <span>
+              <a href="#"
+                ><i class="fa-2x m-2 text-primary fa-brands fa-facebook"> </i
+              ></a>
+              <a href="#"><i class="fa-2x m-2 fa-brands fa-instagram"> </i></a>
+              <a href="#"
+                ><i class="fa-2x m-2 text-success fa-solid fa-map-location-dot">
+                </i
+              ></a>
+            </span>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <h4 class="fw-bold pt-3 mb-5">BUSINESS HOURS</h4>
+            <h5 class="fs-5 text-white fw-bold mb-0">Working Days:</h5>
+            <p class="mb-2">
+              <i class="fa-solid fa-calendar-days fa-2x me-1"> </i> Saturday To
+              Thursday 8 AM - 4:30 PM
+            </p>
+            <h5 class="fs-5 text-white fw-bold mt-3 mb-1">Vacations:</h5>
+            <p>
+              <i class="fa-2x me-1 fas fa-store-alt-slash"></i> Friday &
+              Official Holidays
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center Copyright mb-0 py-3">
+        Copyright ©2022 All rights reserved | This Website is made by KMO Team.
+      </p>
+    </footer> -->
+    <script src="assests/js/bootstrap.bundle.min.js"></script>
+    <script src="assests/js/all.min.js"></script>
+    <script src="assests/js/js.js"></script>
+  </body>
 </html>

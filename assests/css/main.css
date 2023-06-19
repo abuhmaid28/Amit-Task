@@ -1,42 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&family=Urbanist:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&family=Urbanist:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 :root {
-  --black-color:#0c0c0c;
+  --black-color: #0c0c0c;
   --secondary-color: #b79632;
   --bg-color: #1b1b1b;
   --main-text-color: #fff;
   --sec-text-color: #9b978c;
   --font-family: "Kanit", sans-serif;
-  --sec-font-family: 'Urbanist', sans-serif;
-  --transition: 0.3s ease;
+  --sec-font-family: "Urbanist", sans-serif;
+  --transition: 0.4s ease;
+  --secondary-bg-color: #161515;
 }
 body {
-    font-family: var(--sec-font-family);
+  font-family: var(--sec-font-family);
+  height: 2000px;
+  background-color: #1b1b1b !important;
 }
 a {
   text-decoration: none;
 }
-.navbar{
-    background-color: var(--black-color);
-    
+.navbar {
+  background-color: var(--black-color);
+  height: 60px;
+  line-height: 50px;
+  overflow: hidden;
 }
-.navbar a {
-    color: white;
+.navbar span {
+  font-size: 12px;
+  margin-top: 20px;
 }
-.navbar li a:hover {
-background-color: var(--secondary-color);
-font-family: var(--sec-font-family);
+.navbar-toggler {
+  margin-top: -1rem;
+  background-color: var(--secondary-color) !important;
 }
-.nav-link{
-    width: 100%;
-    height:50px;
-    line-height: 50px;
+.flag-img {
+  width: 30px;
+  height: 25px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: -50px;
 }
-a img{
-    width: 8%;
+.flag-content {
+  min-width: 100px;
+}
+.navbar li a:hover,
+.navbar a.active {
+  background-color: var(--secondary-color);
+}
+nav a img {
+  width: 100px;
+}
+.first-article {
+  background-color: var(--bg-color);
+}
+article h1,
+article h3,
+footer h4 {
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+article h1,
+article h3 {
+  letter-spacing: 5px;
+}
+.first-article .btn {
+  background-color: var(--secondary-color);
+  color: var(--main-text-color);
+  transition: var(--transition);
+  letter-spacing: 2px;
+  border-radius: 10px 0;
+  border: 2px solid var(--secondary-color) !important;
+}
+.first-article button:hover {
+  background-color: transparent !important;
+  color: var(--main-text-color);
+  border-radius: 0 10px;
+}
+.first-article p {
+  line-height: 1.6;
+  padding: 10px;
+}
+.first-article .img-fluid {
+  border-radius: 5%;
+  transition: var(--transition);
+}
+.first-article .about-img:hover img {
+  transform: scale(1.05);
+}
+.second-article {
+  background-color: var(--secondary-bg-color);
+}
+.second-article .row {
+  width: 90%;
+}
+p {
+  color: var(--sec-text-color);
+}
+
+.second-article .img-fluid {
+  width: 20%;
+}
+.second-article .icon-div {
+  box-shadow: 1px 1px 10px rgba(170, 147, 147, 0.589);
+  border-radius: 10px;
+}
+footer {
+  background-color: var(--black-color);
+}
+footer p {
+  color: var(--main-text-color);
+}
+.fa-instagram {
+  color: #f401c3;
+}
+footer .Copyright {
+  border-top: 1px solid var(--main-text-color);
+  width: 100%;
 }
