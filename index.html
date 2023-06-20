@@ -4,22 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
+    <!-- main css file -->
     <link rel="stylesheet" href="assests/css/main.css" />
+    <!-- bootstrap css file -->
     <link rel="stylesheet" href="assests/css/bootstrap.min.css" />
+    <!-- font-awesome css file -->
     <link rel="stylesheet" href="assests/css/all.min.css" />
   </head>
+  <!-- main content -->
 
   <body>
+    <!-- navbar start -->
     <nav class="navbar navbar-expand-lg position-fixed w-100 z-1">
+      <!-- full navbar content -->
       <div
         class="container-lg container-fluid justify-content-between align-items-center"
       >
+        <!-- logo -->
         <a class="navbar-brand" href="#"
           ><img
             class="img-fluid"
             src="assests/images/cons-logo.webp"
             alt="cons"
         /></a>
+        <!-- collapse button -->
         <button
           class="navbar-toggler ms-auto"
           type="button"
@@ -31,20 +39,21 @@
         >
           <span class="navbar-toggler-icon my-1"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- collapse box & navbar content -->
+        <div class="collapse navbar-collapse key" id="navbarSupportedContent">
           <ul class="navbar-nav h-100 ms-auto">
-            <li class="nav-item h-100">
+            <li class="nav-item h-100 mx-sm-auto mx-md-auto">
               <a class="nav-link px-3 text-white" href="#">Home</a>
             </li>
-            <li class="nav-item h-100">
+            <li class="nav-item h-100 mx-sm-auto mx-md-auto">
               <a class="nav-link px-3 text-white" href="#">Business</a>
             </li>
-            <li class="nav-item h-100">
+            <li class="nav-item h-100 mx-sm-auto mx-md-auto">
               <a class="nav-link px-3 text-white active" href="index.html"
                 >About</a
               >
             </li>
-            <li class="nav-item h-100">
+            <li class="nav-item h-100 mx-sm-auto mx-md-auto">
               <a class="nav-link px-3 text-white" href="#">Contact</a>
             </li>
           </ul>
@@ -68,20 +77,30 @@
         </div>
       </div>
     </nav>
-    <article class="first-article text-center pt-5">
+    <!-- navbar end -->
+    <!-- about section start -->
+    <section class="first-section text-center pt-5">
       <div class="container">
-        <!-- about text content start -->
-        <div class="first-article-text pt-5 mb-5">
-          <h1 class="fs-1 fw-bold text-uppercase mb-5">ABOUT US</h1>
+        <div class="first-section-text pt-5 mb-5">
+          <h1 class="fw-bold text-uppercase mb-5 display-5">ABOUT US</h1>
           <div class="buttons d-flex justify-content-center align-items-center">
-            <button class="btn py-2 px-4">WHO WE ARE</button>
-            <button class="btn py-2 px-4 mx-3">ABOUT COMPANY</button>
-            <button class="btn py-2 px-4">HOW TO CONTACT US</button>
+            <button id="whoBtn" class="btn py-3 px-4" data-target="content-1">
+              WHO WE ARE
+            </button>
+            <button
+              id="aboutBtn"
+              class="btn py-3 px-4 mx-3"
+              data-target="content-2"
+            >
+              ABOUT COMPANY
+            </button>
+            <button id="howToBtn" class="btn py-3 px-4" data-target="content-3">
+              HOW TO CONTACT US
+            </button>
           </div>
-          <!-- about text content end -->
         </div>
-        <!-- about image & text content start -->
-        <div class="row pt-5">
+        <!-- WHO WE ARE Content -->
+        <div id="content-1" class="row py-5">
           <div
             class="col-lg-6 col-md-6 col-sm-12 mt-5 about-img overflow-hidden"
           >
@@ -92,7 +111,7 @@
             />
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <h3 class="fs-2 fw-bold text-uppercase mb-3">WHO WE ARE?</h3>
+            <h3 class="fs-1 fw-bold text-uppercase mb-3">WHO WE ARE?</h3>
             <p class="fs-5 m-0">
               Market disruption is an accepted reality for business, as new
               competition and technologies drive the pace of change faster than
@@ -117,20 +136,74 @@
             <p class="fs-5 m-0 p-0 pb-5">We are JFC.</p>
           </div>
         </div>
+        <!-- ABOUT COMPANY  Content -->
+        <div id="content-2" class="row py-5 flex-row-reverse">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 mt-5 about-img overflow-hidden"
+          >
+            <img
+              class="img-fluid h-100 w-75 object-fit-cover"
+              src="assests/images/About-us.webp"
+              alt="about-img"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h3 class="fs-1 fw-bold text-uppercase mb-3">ABOUT COMPANY?</h3>
+            <p class="fs-4 m-0">
+              Our company is established in 2006, Specialized at consultant
+              works for companies and finishing their legal services.
+            </p>
+            <p class="fs-4 m-0">
+              We have many important clients as KOREAN EMBASSY IN EGYPT, KOREAN
+              ASSOCIATION IN EGYPT, etc..
+            </p>
+            <p class="fs-4 m-0">
+              We have many employees included 5 lawyers and 1 official
+              accountant. Our managers are :
+            </p>
+            <p class="fs-4 m-0 p-0">-Philip Kim</p>
+            <p class="fs-4 m-0 p-0">-Mohamed Ismail</p>
+            <p class="fs-4 m-0 p-0">-Marina Girgis</p>
+          </div>
+        </div>
+        <!-- HOW TO CONTACT US Content -->
+        <div id="content-3" class="row py-5">
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-5 about-img third-img">
+            <img
+              class="img-fluid w-75 h-100 object-fit-cover"
+              src="assests/images/About-uss.webp"
+              alt="about-img"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h3 class="fs-1 fw-bold text-uppercase mb-3 mt-5">
+              HOW CAN I CONTACT YOU?
+            </h3>
+            <p class="fs-4">
+              You can freely contact us through our social media accounts or our
+              number that is written on this website.
+            </p>
+            <a class="fs-4 text-decoration-none" href="#"
+              >Go to Contact Page
+              <i class="fa-solid fa-arrow-right text-white-50"></i
+            ></a>
+          </div>
+        </div>
       </div>
-    </article>
-
-    <article class="second-article text-center py-5">
+    </section>
+    <!-- about section end -->
+    <!-- VISION & MISSION section start -->
+    <section class="second-section text-center py-5">
       <div class="container">
-        <!-- about text content start -->
-        <div class="second-article-text pt-5 mb-5">
+        <!-- VISION & MISSION HEADER -->
+        <div class="second-section-text pt-5 mb-5">
           <h1 class="display-4 fw-bold text-uppercase mb-5">
             VISION & MISSION
           </h1>
-          <!-- about text content end -->
         </div>
-        <!-- about image & text content start -->
+        <!-- VISION & MISSION CONTENT -->
         <div class="row mx-auto">
+          <!-- VISION CONTENT -->
           <div class="col-lg-5 col-sm-12 mt-5 icon-div mx-auto p-5">
             <img
               class="img-fluid mb-4"
@@ -147,6 +220,7 @@
               pursue exciting careers with their ideal organizations.
             </p>
           </div>
+          <!-- MISSION CONTENT -->
           <div class="col-lg-5 col-sm-12 mt-5 icon-div mx-auto p-5">
             <img
               class="img-fluid mb-4"
@@ -165,8 +239,10 @@
           </div>
         </div>
       </div>
-    </article>
-    <!-- <footer>
+    </section>
+    <!-- VISION & MISSION section end -->
+    <!-- footer start -->
+    <footer>
       <div class="container pt-5 pb-3">
         <div class="row text-center">
           <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
@@ -213,12 +289,17 @@
           </div>
         </div>
       </div>
+      <!-- Copyright -->
       <p class="text-center Copyright mb-0 py-3">
         Copyright ©2022 All rights reserved | This Website is made by KMO Team.
       </p>
-    </footer> -->
-    <script src="assests/js/bootstrap.bundle.min.js"></script>
-    <script src="assests/js/all.min.js"></script>
+    </footer>
+    <!-- footer end -->
+    <!-- main js file -->
     <script src="assests/js/js.js"></script>
+    <!-- bootstrap js file -->
+    <script src="assests/js/bootstrap.bundle.min.js"></script>
+    <!-- font-awesome js file -->
+    <script src="assests/js/all.min.js"></script>
   </body>
 </html>

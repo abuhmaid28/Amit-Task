@@ -18,7 +18,6 @@
 }
 body {
   font-family: var(--sec-font-family);
-  height: 2000px;
   background-color: #1b1b1b !important;
 }
 a {
@@ -28,7 +27,7 @@ a {
   background-color: var(--black-color);
   height: 60px;
   line-height: 50px;
-  overflow: hidden;
+  z-index: 100;
 }
 .navbar span {
   font-size: 12px;
@@ -55,20 +54,52 @@ a {
 nav a img {
   width: 100px;
 }
-.first-article {
+.first-section {
   background-color: var(--bg-color);
 }
-article h1,
-article h3,
+.navbar-collapse {
+  transition: none !important;
+}
+/* collapse from left to right */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 991px) {
+  .key {
+    background-color: var(--black-color);
+    animation: slideInLeft 0.8s ease-in-out 0s 1;
+  }
+  .navbar-brand .img-fluid {
+    margin-top: -20px;
+  }
+  ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+section h1,
+section h3,
 footer h4 {
   color: var(--secondary-color);
   font-family: var(--font-family);
 }
-article h1,
-article h3 {
+/* hide js content before click */
+#content-2,
+#content-3 {
+  display: none;
+}
+section h1,
+section h3 {
   letter-spacing: 5px;
 }
-.first-article .btn {
+.first-section .btn {
   background-color: var(--secondary-color);
   color: var(--main-text-color);
   transition: var(--transition);
@@ -76,36 +107,44 @@ article h3 {
   border-radius: 10px 0;
   border: 2px solid var(--secondary-color) !important;
 }
-.first-article button:hover {
+.first-section button:hover {
   background-color: transparent !important;
   color: var(--main-text-color);
   border-radius: 0 10px;
 }
-.first-article p {
+.first-section p {
   line-height: 1.6;
   padding: 10px;
 }
-.first-article .img-fluid {
+.first-section .img-fluid {
   border-radius: 5%;
   transition: var(--transition);
 }
-.first-article .about-img:hover img {
+.first-section .about-img:hover img {
   transform: scale(1.05);
 }
-.second-article {
+.second-section {
   background-color: var(--secondary-bg-color);
 }
-.second-article .row {
+.second-section .row {
   width: 90%;
 }
 p {
   color: var(--sec-text-color);
 }
-
-.second-article .img-fluid {
+.row a {
+  color: var(--secondary-color);
+}
+.row a:hover {
+  color: var(--main-text-color);
+}
+.third-img {
+  height: 550px;
+}
+.second-section .img-fluid {
   width: 20%;
 }
-.second-article .icon-div {
+.second-section .icon-div {
   box-shadow: 1px 1px 10px rgba(170, 147, 147, 0.589);
   border-radius: 10px;
 }
