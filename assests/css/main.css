@@ -99,6 +99,20 @@ section h1,
 section h3 {
   letter-spacing: 5px;
 }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  line-height: 1.15;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+}
 .first-section .btn {
   background-color: var(--secondary-color);
   color: var(--main-text-color);
